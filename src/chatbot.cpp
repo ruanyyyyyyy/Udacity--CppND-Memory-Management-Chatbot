@@ -120,11 +120,11 @@ ChatBot& ChatBot::operator=(ChatBot&& other)
     _currentNode = other._currentNode;
     _chatLogic->SetChatbotHandle(this);
 
-     if(other._image!=NULL)
-    {
-        delete other._image;
-        other._image = NULL;
-    }
+    //  if(other._image!=NULL)
+    // {
+    //     delete other._image;
+    //     other._image = NULL;
+    // }
     other._image = NULL;
     other._rootNode = nullptr;
     other._currentNode = nullptr;
